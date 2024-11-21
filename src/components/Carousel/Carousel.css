@@ -1,0 +1,41 @@
+.carousel {
+    position: relative;
+    width: 40%;
+    background: #6c63ff;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel-item {
+    display: none;
+    font-size: 18px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+
+    &.active {
+        background-color: black;
+        transform: scale(1.2);
+    }
+}

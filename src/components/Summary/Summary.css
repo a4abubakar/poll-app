@@ -1,0 +1,16 @@
+.summary {
+    padding: 20px;
+}
+
+.summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.summary button {
+    padding: 10px 20px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,32 @@
+.option {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+
+    &:hover {
+        background-color: #6c63ff;
+        color: white;
+
+        .option-label {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .option-icon {
+        font-size: 24px;
+    }
+
+    .option-label {
+        display: block;
+        font-size: 14px;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s, transform 0.3s;
+        margin-top: 5px;
+    }
+}
